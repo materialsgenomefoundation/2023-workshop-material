@@ -1,0 +1,27 @@
+system:
+  phase_models: Cr-Ni_phases.json
+  datasets: input-data
+  tags:
+    dft:
+      excluded_model_contributions: ['idmix', 'mag']
+      weight: 0.1
+    nomag:
+      excluded_model_contributions: ['mag']
+    estimated-entropy:
+      excluded_model_contributions: ['idmix', 'mag']
+      weight: 0.1
+output:
+  output_db:  mcmc.tdb
+  verbosity:  2
+  tracefile:  null  # don't write a trace file
+  probfile:   null  # don't write a lnprob file
+  logfile:    null  # write output to console
+mcmc:
+  iterations: 3
+  save_interval: 1
+  scheduler: null   # no parallelization
+  input_db: mcmc-start.tdb  # same as our generated-aicc.tdb
+  chains_per_parameter: 2
+  data_weights:
+    ZPF: 40.0
+    SM: 0.1
