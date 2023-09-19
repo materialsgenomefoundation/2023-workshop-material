@@ -1,6 +1,3 @@
-pycalphad==0.10.2
-kawin==0.2.0
-espei==0.8.9
 pysipfenn==0.12.0
 pycalphad==0.10.2
 espei==0.8.8
