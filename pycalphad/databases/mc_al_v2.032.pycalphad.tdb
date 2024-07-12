@@ -3462,7 +3462,11 @@ Metastable, coherent Al-containing GP-Zones, "Matsuda-Phase":
 These GP-zones are modeled as ordered fcc-based phase, giving Al2Mg1Si1
 according to Matsuda phase plus Al [REF:C33]
 >> 4 !
- CONST GP_MAT  : AL% MG SI : AL% MG SI : AL MG% SI : AL MG SI% : VA : !
+
+ CONST GP_MAT  : AL%,CR,CU,FE,MG,MN,NI,SC,SI,TI,ZN,ZR :
+  AL%,CR,CU,FE,MG,MN,NI,SC,SI,TI,ZN,ZR :
+  AL%,CR,CU,FE,MG,MN,NI,SC,SI,TI,ZN,ZR :
+  AL%,CR,CU,FE,MG,MN,NI,SC,SI,TI,ZN,ZR : VA : !
 $
 PARAMETER G(GP_MAT,AL:AL:AL:MG:VA;0) 273.00 +GFAL3MG#; 6000.00  N
 REF:85 !
